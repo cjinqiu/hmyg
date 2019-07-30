@@ -1,2 +1,36 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<SearchInput></SearchInput>
+
+<!-- 轮播图开始 -->
+  <swiper class="swiperList" indicator-dots autoplay circular interval="2000" indicator-active-color="#fff">
+    <swiper-item class="swiperTitle" wx:for="{{swiperList}}" wx:key="goods_id">
+      <navigator> 
+          <image src="{{item.image_src}}" mode="widthFix"/>
+      </navigator>
+    </swiper-item>    
+ </swiper>
+    
+<!-- 轮播图结束 -->
+
+<!--导航分类开始-->
+<view class="navs">
+    <navigator class="navs_title" wx:for="{{navCateList}}" wx:key="name">
+        <image src="{{item.image_src}}" mode="widthFix"/>
+    </navigator>
+</view>
+<!--导航分类结束-->
+
+<!--楼层部分开始-->
+<view class="floorIndex">
+   <view class="floorItem" wx:for="{{floorList}}" wx:for-index="index1" wx:for-item="item1" wx:key="item1">
+     <view class="floorTitle">
+       <image src="{{item1.floor_title.image_src}}" mode="widthFix" />
+     </view>
+     <view class="floor_List">
+       <navigator wx:for="{{item1.product_list}}" wx:for-index="index2" wx:for-item="item2" wx:key="name">
+         <image class="floor_content" src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}"/>
+       </navigator>
+    </view>  
+   </view>
+</view>
+  
+<!--楼层部分结束-->

@@ -1,1 +1,27 @@
-/* pages/index/index.wxss */
+.swiperList {
+  height: 340rpx;
+}
+.navs {
+  display: flex;
+}
+.navs .navs_title {
+  flex: 1;
+  padding: 25rpx;
+}
+.floorIndex .floorItem .floor_List {
+  padding: 0 10rpx;
+}
+.floorIndex .floorItem .floor_List navigator {
+  width: 33.33%;
+  float: left;
+}
+.floorIndex .floorItem .floor_List navigator:nth-last-child(-n + 4) {
+  height: 208.78378378rpx;
+  border-left: 10rpx solid #fff;
+}
+.floorIndex .floorItem .floor_List navigator:nth-last-child(-n+2) {
+  border-top: 10rpx solid #fff;
+}
+.floorIndex .floorItem .floor_List navigator image {
+  height: 100%;
+}

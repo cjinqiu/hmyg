@@ -1,10 +1,12 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+
+page,text,view,swipe,swipe-item,image,navigator,button,input {
+  box-sizing: border-box
+}
+image{
+  width: 100%
+}
+page{
+  --themeColor:rgb(235, 68, 80);
+  font-size: 28rpx;
+  color:#666;
+}

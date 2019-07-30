@@ -1,0 +1,14 @@
+.tabsIndex{
+    background: var(--themeColor);
+    padding: 15rpx 10px;
+    height:90rpx;
+}
+.SearchInput{
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    font-size: 25rpx;
+}

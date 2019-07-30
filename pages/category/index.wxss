@@ -1,1 +1,41 @@
-/* pages/category/index.wxss */
+.category {
+  height: calc(100vh-90rpx);
+  display: flex;
+}
+.category .left_menu {
+  flex: 1;
+  height: 100%;
+}
+.category .left_menu .leftCategory {
+  padding: 10rpx 10rpx;
+}
+.category .left_menu .active {
+  color: var(--themeColor);
+}
+.category .right_content {
+  flex: 3;
+}
+.category .right_content .rightCategory .rightTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category .right_content .rightCategory .rightTitle .delimiter {
+  color: #ccc;
+}
+.category .right_content .rightCategory .rightTitle .cat_name {
+  color: #000;
+  padding: 15rpx 15rpx;
+  font-size: 30rpx;
+}
+.category .right_content .rightCategory .rightContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.category .right_content .rightCategory .rightContent navigator {
+  width: 33.33%;
+  text-align: center;
+}
+.category .right_content .rightCategory .rightContent navigator image {
+  width: 50%;
+}
