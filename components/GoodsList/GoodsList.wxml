@@ -1,0 +1,13 @@
+<view class="tabs">
+  <view class="goodsListTitle">
+    <view
+    wx:for="{{ tabs }}" wx:key="id"
+    class="goodsListItem {{ item.isActive ? 'active' : '' }}"
+    bindtap="handleChange" data-index="{{index}}">
+        {{item.text}}
+    </view>
+  </view>
+  <view class="goodsListContent">
+      <slot></slot>
+  </view>
+</view>

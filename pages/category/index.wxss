@@ -1,5 +1,5 @@
 .category {
-  height: calc(100vh-90rpx);
+  height: calc(100vh - 90rpx);
   display: flex;
 }
 .category .left_menu {
